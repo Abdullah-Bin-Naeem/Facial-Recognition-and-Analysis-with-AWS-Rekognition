@@ -1,0 +1,72 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facial Recognition</title>
+</head>
+<body>
+    <h1>Facial Recognition and Analysis</h1>
+
+    <h2>Index a Face</h2>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <input type="text" name="name" placeholder="Person Name" required>
+        <input type="file" name="image" accept="image/*" required>
+        <button type="submit">Index Face</button>
+    </form>
+
+    <h2>Search a Face</h2>
+    <form action="/search" method="POST" enctype="multipart/form-data">
+        <input type="file" name="image" accept="image/*" required>
+        <button type="submit">Search Face</button>
+    </form>
+
+    <h2>Analyze Facial Features</h2>
+    <form action="/analyze" method="POST" enctype="multipart/form-data">
+        <input type="file" name="image" accept="image/*" required>
+        <button type="submit">Analyze Face</button>
+    </form>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facial Recognition</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Facial Recognition and Analysis</h1>
+
+        <section>
+            <h2>Index a Face</h2>
+            <form action="/upload" method="POST" enctype="multipart/form-data">
+                <input type="text" name="name" placeholder="Person Name" required>
+                <input type="file" name="image" accept="image/*" required>
+                <button type="submit">Index Face</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Search a Face</h2>
+            <form action="/search" method="POST" enctype="multipart/form-data">
+                <input type="file" name="image" accept="image/*" required>
+                <button type="submit">Search Face</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Analyze Facial Features</h2>
+            <form action="/analyze" method="POST" enctype="multipart/form-data">
+                <input type="file" name="image" accept="image/*" required>
+                <button type="submit">Analyze Face</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Result</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        {% if success %}
+            <h1>Face Indexing Successful!</h1>
+            <p>The face has been successfully indexed into the collection.</p>
+        {% else %}
+            <h1>Face Indexing Failed</h1>
+            <p>There was an error indexing the face. Please try again.</p>
+        {% endif %}
+        <a href="/">Go Back</a>
+    </div>
+</body>
+</html>

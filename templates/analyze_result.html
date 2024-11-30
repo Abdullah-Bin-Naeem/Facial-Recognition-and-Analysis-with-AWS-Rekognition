@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analyze Features</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Facial Analysis Result</h1>
+
+        <div class="image-container">
+            <h3>Uploaded Image</h3>
+            <img src="{{ image_url }}" alt="Uploaded Image">
+        </div>
+
+        <div class="features">
+            <h2>Facial Features</h2>
+            <ul>
+                {% for feature, value in features.items() %}
+                    <li><strong>{{ feature }}:</strong> {{ value }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

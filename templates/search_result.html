@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Result</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Face Search Result</h1>
+
+        <div class="result">
+            <h2>Top Match</h2>
+            <p><strong>External Image ID:</strong> {{ external_id }}</p>
+            <p><strong>Similarity:</strong> {{ similarity }}%</p>
+        </div>
+
+        <div class="image-container">
+            <h3>Uploaded Image</h3>
+            <img src="{{ image_url }}" alt="Uploaded Image">
+        </div>
+    </div>
+</body>
+</html>
